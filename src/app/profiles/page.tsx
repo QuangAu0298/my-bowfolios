@@ -3,7 +3,7 @@ import { Container, Row } from 'react-bootstrap';
 import { prisma } from '@/lib/prisma';
 import { PageIDs } from '@/utilities/ids';
 import pageStyle from '@/utilities/pageStyle';
-import ProfileCardHelper from './ProfileCardHelper';
+import ProfileCardHelper from '@/components/ProfileCardHelper';
 
 const ProfilesPage = async () => {
   const profiles = await prisma.profile.findMany();

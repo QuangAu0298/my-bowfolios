@@ -2,7 +2,7 @@
 import { Profile } from '@prisma/client';
 import { prisma } from '@/lib/prisma';
 import { ProfileCardData } from '@/lib/ProfileCardData';
-import ProfileCard from '../../components/ProfileCard';
+import ProfileCard from './ProfileCard';
 
 const ProfileCardHelper = async ({ profile }: { profile: Profile }) => {
   const profileInterests = await prisma.profileInterest.findMany({
